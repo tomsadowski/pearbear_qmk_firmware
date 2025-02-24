@@ -17,20 +17,20 @@ const uint16_t PROGMEM  shift_cmb_r[] = {KC_I,    KC_O,    COMBO_END};
 const uint16_t PROGMEM   caps_cmb_l[] = {KC_F,    KC_L,    COMBO_END};
 const uint16_t PROGMEM   home_cmb_r[] = {KC_M,    KC_G,    COMBO_END};
 //                           3 . . 3 .          . 3 . . 3
-const uint16_t PROGMEM    alt_cmb_l[] = {KC_X,    KC_B,    COMBO_END};
-const uint16_t PROGMEM    alt_cmb_r[] = {KC_Y,    KC_J,    COMBO_END};
+const uint16_t PROGMEM    alt_cmb_l[] = {KC_K,    KC_B,    COMBO_END};
+const uint16_t PROGMEM    alt_cmb_r[] = {KC_Y,    KC_V,    COMBO_END};
 //                           2 . . 2 .          . 2 . . 2
 const uint16_t PROGMEM   ctrl_cmb_l[] = {KC_A,    KC_T,    COMBO_END};
 const uint16_t PROGMEM   ctrl_cmb_r[] = {KC_E,    KC_N,    COMBO_END};
 //                           1 . . 1 .          . 1 . . 1
-const uint16_t PROGMEM  lnav2_cmb_l[] = {KC_V,    KC_D,    COMBO_END};
-const uint16_t PROGMEM  mouse_cmb_r[] = {KC_U,    KC_K,    COMBO_END};
+const uint16_t PROGMEM  lnav2_cmb_l[] = {KC_X,    KC_D,    COMBO_END};
+const uint16_t PROGMEM  mouse_cmb_r[] = {KC_U,    KC_J,    COMBO_END};
 //                           3 . . . 3          3 . . . 3
-const uint16_t PROGMEM  game3_cmb_l[] = {KC_X,    KC_Q,    COMBO_END};
-const uint16_t PROGMEM  game2_cmb_r[] = {KC_Z,    KC_J,    COMBO_END};
+const uint16_t PROGMEM  game3_cmb_l[] = {KC_K,    KC_Q,    COMBO_END};
+const uint16_t PROGMEM  game2_cmb_r[] = {KC_Z,    KC_V,    COMBO_END};
 //                           3 . . 2 .          . 2 . . 3
-const uint16_t PROGMEM    gui_cmb_l[] = {KC_T,    KC_X,    COMBO_END};
-const uint16_t PROGMEM    gui_cmb_r[] = {KC_E,    KC_J,    COMBO_END};
+const uint16_t PROGMEM    gui_cmb_l[] = {KC_T,    KC_K,    COMBO_END};
+const uint16_t PROGMEM    gui_cmb_r[] = {KC_E,    KC_V,    COMBO_END};
 //                           2 . . 1 .          . 1 . . 2
 const uint16_t PROGMEM  lnav1_cmb_l[] = {KC_A,    KC_D,    COMBO_END};
 const uint16_t PROGMEM  numbe_cmb_r[] = {KC_U,    KC_N,    COMBO_END};
@@ -186,9 +186,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
     // alpha layer (home layer)
     // - contains: alphabet, space, backspace, delete
     [ALPHA_LYR] = LAYOUT_split_3x5_2(
-        KC_X,    KC_C,    KC_H,    KC_B,    KC_Q,            KC_Z,    KC_Y,    KC_W,    KC_P,    KC_J,
+        KC_K,    KC_C,    KC_H,    KC_B,    KC_Q,            KC_Z,    KC_Y,    KC_W,    KC_P,    KC_V,
         KC_A,    KC_S,    KC_R,    KC_T,    KC_COMMA,        KC_DOT,  KC_E,    KC_I,    KC_O,    KC_N,
-        KC_V,    KC_F,    KC_L,    KC_D,    KC_QUOT,         KC_SCLN, KC_U,    KC_M,    KC_G,    KC_K,
+        KC_X,    KC_F,    KC_L,    KC_D,    KC_QUOT,         KC_SCLN, KC_U,    KC_M,    KC_G,    KC_J,
                  KC_BSPC, HOLD_MOUSE_TAP_SPACE,              HOLD_NUMBE_TAP_SPACE,       KC_DEL),
     // number layer
     // - contains: digits, arrow-keys, misc symbols, misc navigation
@@ -245,16 +245,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] =
     // alpha-from-number layer
     // - alpha layer momentarily accessed from number layer
     [ALPHA_FROM_NUMBE_LYR] = LAYOUT_split_3x5_2(
-        KC_X,   KC_C,     KC_H,    KC_B,    KC_Q,            KC_Z,    KC_Y,    KC_W,    KC_P,    KC_J,
+        KC_K,   KC_C,     KC_H,    KC_B,    KC_Q,            KC_Z,    KC_Y,    KC_W,    KC_P,    KC_V,
         KC_A,   KC_S,     KC_R,    KC_T,    _______,         _______, KC_E,    KC_I,    KC_O,    KC_N,
-        KC_V,   KC_F,     KC_L,    KC_D,    _______,         _______, KC_U,    KC_M,    KC_G,    KC_K,
+        KC_X,   KC_F,     KC_L,    KC_D,    _______,         _______, KC_U,    KC_M,    KC_G,    KC_J,
                                    _______, KC_SPC,          _______, _______),
     // alpha-from-mouse layer
     // - alpha layer momentarily accessed from mouse layer
     [ALPHA_FROM_MOUSE_LYR] = LAYOUT_split_3x5_2(
-        KC_X,   KC_C,     KC_H,    KC_B,    KC_Q,            KC_Z,    KC_Y,    KC_W,    KC_P,     KC_J,
+        KC_K,   KC_C,     KC_H,    KC_B,    KC_Q,            KC_Z,    KC_Y,    KC_W,    KC_P,     KC_V,
         KC_A,   KC_S,     KC_R,    KC_T,    _______,         _______, KC_E,    KC_I,    KC_O,     KC_N,
-        KC_V,   KC_F,     KC_L,    KC_D,    _______,         _______, KC_U,    KC_M,    KC_G,     KC_K,
+        KC_X,   KC_F,     KC_L,    KC_D,    _______,         _______, KC_U,    KC_M,    KC_G,     KC_J,
                                    _______, _______,         HOLD_NUMBE_TAP_SPACE,      KC_DEL),
     // number-from-other layer
     // - number layer momentarily accessed from alpha layer or alpha-from-mouse layer
