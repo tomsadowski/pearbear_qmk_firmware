@@ -24,8 +24,10 @@ The caps-lock combo only turns caps-lock on. Caps-lock is turned off when a modi
 
 ## Lefty Layers   
 
-![lefty_layers](pics/lefty_layers.png)   
+![lefty_layers](pics/lnav1.png)   
+![lefty_layers](pics/lnav2.png)   
 
 ## Game Layers   
 
-![game_layers](pics/game_layers.png)  
+![game_layers](pics/game_2d.png)  
+![game_layers](pics/game_3d.png)  
